@@ -3,7 +3,7 @@ session_start();
 include("./includes/header.php");
 ?>
 <div class="col-lg-6">
-	<br><br><img src="http://s13.postimg.org/5wn7yp8uv/SEATING_LAYOUT.png">
+	<br><br><img src="https://media.discordapp.net/attachments/455318398180524034/774165479241416744/seat2.jpg?width=450&height=225">
 </div>
 
 <div class="col-lg-6">

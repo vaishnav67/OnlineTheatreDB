@@ -14,35 +14,27 @@ if (isset($_SESSION['employee'])){
 				<center><a href="../index.php"  style="font-size:22px; font-weight:400; color:#D11111">Go to the Home Page</a></center>
     		</div>
 			<div class="row">
-				<p>
-					<a href="create.php" class="btn btn-success">Create</a>
-				</p>
 				
 				<table class="table table-striped table-bordered">
 		              <thead>
 		                <tr>
-		                  <th>Customer ID</th>
-		                  <th>Customer Username</th>
-		                  <th>Customer Password</th>
-		                  <th>Customer Name</th>
-		                  <th>Zip Code</th>
+		                  <th>Theatre ID</th>
+		                  <th>Location</th>
+		                  <th>Manager ID</th>
 		                </tr>
 		              </thead>
 		              <tbody>
 		              <?php 
 					   $pdo = Database::connect();
-					   $sql = 'SELECT * FROM customer ORDER BY mem_id ASC';
+					   $sql = 'SELECT * FROM theatre ORDER BY t_id ASC';
 	 				   foreach ($pdo->query($sql) as $row) {
 						   		echo '<tr>';
-						   		echo '<td>'. $row['mem_id'] . '</td>';
-							   	echo '<td>'. $row['username'] . '</td>';
-							   	echo '<td>'. $row['password'] . '</td>';
-							   	echo '<td>'. $row['name'] . '</td>';
-							   	echo '<td>'. $row['zip_code'] . '</td>';
+						   		echo '<td>'. $row['t_id'] . '</td>';
+							   	echo '<td>'. $row['location'] . '</td>';
+							   	echo '<td>'. $row['mgr_id'] . '</td>';
 							   	echo '<td width=250>';
-							   	echo '<a class="btn btn-success" href="../customercrud/update.php?mem_id='.$row['mem_id'].'">Update</a>';
+							   	echo '<a class="btn" href="../theatreset/confirm.php?t_id='.$row['t_id'].'">Set</a>';
 							   	echo '&nbsp;';
-							   	echo '<a class="btn btn-danger" href="../customercrud/delete.php?mem_id='.$row['mem_id'].'">Delete</a>';
 							   	echo '</td>';
 							   	echo '</tr>';
 					   }

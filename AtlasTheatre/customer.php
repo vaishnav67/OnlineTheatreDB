@@ -44,7 +44,7 @@ if(isset($_SESSION['basket'])) {
 		}
 }
 ?>
-<span style="font-size:20px; font-weight:600; color:#D11111">Total: £<?php echo $total;?></span><br><br></center><br>
+<span style="font-size:20px; font-weight:600; color:#D11111">Total: Rs <?php echo $total;?></span><br><br></center><br>
 </div>
                  
 </div>

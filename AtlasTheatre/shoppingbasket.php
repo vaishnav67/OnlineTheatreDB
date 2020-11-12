@@ -122,7 +122,7 @@ if(isset($_SESSION['basket'])) {
 
 		?> 
 				<div class="col-lg-4">
-				<center><span style="font-size:21px; font-weight:600; color:#D11111">Total: £<?php echo $total;?></span><center><br>
+				<center><span style="font-size:21px; font-weight:600; color:#D11111">Total: Rs <?php echo $total;?></span><center><br>
 				<center><a class="btn btn-danger" href="./customer.php" role="button"  style="font-size:18px">BOOK NOW</a></center><br>  
 			
 				<center><a href='shoppingbasket.php?empty=true' style="font-size:22px; font-weight:400; color:#D11111">Empty basket</a></center>  </div>

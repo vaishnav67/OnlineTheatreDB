@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_SESSION['employee'])){
+if (true){
 	
 	require '../includes/database.php';
 	include ("../includes/adminheader.html");	
@@ -50,7 +50,10 @@ if (isset($_SESSION['employee'])){
             $q = $pdo->prepare($sql);
             $q->execute(array($un,$ps,$name,$zc));
             Database::disconnect();
+            if(isset($_SESSION['employee']))
             header("Location: ../customercrud/crud.php");
+            else
+            header("Location: ../index.php");  
         }
     }
 ?>

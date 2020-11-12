@@ -47,11 +47,12 @@ if ( isset($_SESSION['basket']) && isset ($_SESSION['customer']) ){
 			
 			if(!$same)
 			{
-				$sql = "insert into reservation (res_id,e_id,res_d, mem_id, s_id, se_id) values(
+				$sql = "insert into reservation (res_id,e_id,res_d, mem_id, t_id, s_id, se_id) values(
 				'',
 				'".$_SESSION['employee']."',
 				NOW(),
-				'".$_SESSION['customer']."',	
+				'".$_SESSION['customer']."',
+				'".$_SESSION['theatre']."',	
 				'".$arreglo[$i]['Id']."',
 				'')";
 				

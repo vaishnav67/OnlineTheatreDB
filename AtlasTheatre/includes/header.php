@@ -18,6 +18,7 @@
 							<input class = "boton" type="submit" name="Movies" value="MOVIES">
 						 </form>
 					 </ul>
+					 <a href="./customercrud/create.php" class="navbar-brand navbar-right"> NEW USER </a>
 					 <?php if(isset($_SESSION['employee'])){?>
 					<a href="./logout.php" class="navbar-brand navbar-right"> EMPLOYEE LOGOUT </a>
 					<?php }else{?>

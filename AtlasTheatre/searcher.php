@@ -1,5 +1,7 @@
 <?php
-include("./index.php");
+session_start();
+include("./includes/header.php");
+include("./includes/database.php");
 
 if (isset($_GET['searcher'])){
 	if ($_GET['searcher'])

@@ -84,24 +84,25 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `username` varchar(15) NOT NULL,
   `password` varchar(60) NOT NULL,
   `name` varchar(20) NOT NULL,
-  `zip_code` int(6) NOT NULL
+  `zip_code` int(6) NOT NULL,
+  `email` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`mem_id`,`username`, `password`,`name`,`zip_code`) VALUES
-(1,'rockstar12','PassWord','Ram K',670661),
-(2,'movielover90','CoolWord','Narsim K',670662),
-(3,'johnmovie1','MovieWord','Warren C',670663),
-(4,'coolboy60','TestWord','Charlie C',670664),
-(5,'jamesbond007','NoHackPls','Ryan R',670665),
-(6,'filmreview101','NotRealPass','Daniel C',670666),
-(7,'pewdiepie','MoviePass','Harrison F',670667),
-(8,'markiplier404','WordPAss','Kenzel D',670668),
-(9,'movie4life','CoolPAss','Jonathon J',670669),
-(10,'stevemc','ABCXYZ','Jeremy R',670662);
+INSERT INTO `customer` (`mem_id`,`username`, `password`,`name`,`zip_code`,`email`) VALUES
+(1,'rockstar12','PassWord','Ram K',670661,'rockstar12@gmail.com'),
+(2,'movielover90','CoolWord','Narsim K',670662,'movielover90@gmail.com'),
+(3,'johnmovie1','MovieWord','Warren C',670663,'johnmovie1@gmail.com'),
+(4,'coolboy60','TestWord','Charlie C',670664,'coolboy60@gmail.com'),
+(5,'jamesbond007','NoHackPls','Ryan R',670665,'jamesbond007@gmail.com'),
+(6,'filmreview101','NotRealPass','Daniel C',670666,'filmreview101@gmail.com'),
+(7,'pewdiepie','MoviePass','Harrison F',670667,'pewdiepie@gmail.com'),
+(8,'markiplier404','WordPAss','Kenzel D',670668,'markiplier404@gmail.com'),
+(9,'movie4life','CoolPAss','Jonathon J',670669,'movie4life@gmail.com'),
+(10,'stevemc','ABCXYZ','Jeremy R',670662,'stevemc@gmail.com');
 
 -- --------------------------------------------------------
 --
@@ -144,28 +145,29 @@ INSERT INTO `reservation` (`res_id`,`res_d`,`s_id`,`e_id`,`mem_id`,`se_id`,`t_id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customers`
+-- Table structure for table `address`
 --
 
-CREATE TABLE IF NOT EXISTS `customers` (
-`customerid` int(6) NOT NULL,
-  `firstname` varchar(50) NOT NULL,
-  `lastname` varchar(50) NOT NULL,
-  `road` varchar(50) NOT NULL,
-  `city` varchar(30) NOT NULL,
-  `postcode` varchar(8) NOT NULL
+CREATE TABLE IF NOT EXISTS `address` (
+`zip_code` int(6) NOT NULL,
+`street` varchar(50) NOT NULL,
+`city` varchar(30) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5;
 
 --
--- Dumping data for table `customers`
+-- Dumping data for table `address`
 --
 
-INSERT INTO `customers` (`customerid`, `firstname`, `lastname`, `road`, `city`, `postcode`) VALUES
-(1, 'Maria', 'Diaz', 'Kignston Av', 'Kiingston', '11111A'),
-(2, 'Diego', 'Corrales', 'London Av', 'Kingston', '11111B'),
-(3, 'Azaher', 'Sarwar', 'Old Road Av', 'Kingston', '33333A'),
-(4, 'Maria', 'Diaz', 'Church Av', 'Kingston', '55555C');
-
+INSERT INTO `address` (`zip_code`,`street`,`city`) VALUES
+(670661,'Z Road', 'Chennai'),
+(670662,'Y Road', 'Kolkata'),
+(670663,'X Road', 'Kochi'),
+(670664,'W Road', 'New Delhi'),
+(670665,'V Road', 'Chennai'),
+(670666,'U Road', 'Kolkata'),
+(670667,'T Road', 'Kochi'),
+(670668,'S Road', 'New Delhi'),
+(670669,'R Road', 'Chennai');
 -- --------------------------------------------------------
 
 --

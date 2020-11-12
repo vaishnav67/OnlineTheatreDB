@@ -16,7 +16,7 @@ Database::disconnect();
 <?php
 foreach ($rows as $f){
 	?>
-<div class="col-sm-6 col-md-4">
+<div class="col-sm-6 col-md-3">
 
 <div class="thumbnail"> 
 		<center>
