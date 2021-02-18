@@ -2,9 +2,8 @@
 Theatre Managment System for CSE2004.
 
 # Technologies Used:
-    *Oracle Database 11g x64
-    *Oracle Instant Client Version 12.1.0.2.0 x 64
-	*HTML, CSS, Bootstrap, jQuery, Oracle SQL and Apache HTTP Server
+* PHP
+* HTML, CSS, Bootstrap, jQuery, SQL, MySQL and Apache HTTP Server
 
 # Run the Web App Locally
 Below there is an explanation of how to run the web app locally using WAMP or XAMPP (you can also separately install and configure Apache and a SGBD if you would prefer).
