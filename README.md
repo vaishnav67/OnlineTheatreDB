@@ -10,9 +10,9 @@ Below there is an explanation of how to run the web app locally using WAMP or XA
 
 1. Clone the repository or download the zip file.
 2. Place the project folder or extract the zip file into the **htdocs** folder (XAMPP) or **www** folder (WAMP).
-3. Create a new database and import the .sql file.
-4. Modify your database connection values (username, password and database name) in the file RaleighTheatre/includes/**database.php**.
-5. Run XAMPP or WAMP and go to: http://localhost/AtlasCinema/index.php
+3. Create a new database called atlas and import the atlas.sql file.
+4. Modify your database connection values (username, password and database name) in the file AtlasTheatre/includes/**database.php**.
+5. Run XAMPP or WAMP and go to: http://localhost/AtlasTheatre/index.php
 	
 # Troubleshooting if you tried to use Oracle Database 11g:
 * If a OCISTMTGETNEXTRESULT is popping up, do this
