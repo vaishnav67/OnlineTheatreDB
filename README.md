@@ -14,11 +14,10 @@ Below there is an explanation of how to run the web app locally using WAMP or XA
 4. Modify your database connection values (username, password and database name) in the file RaleighTheatre/includes/**database.php**.
 5. Run XAMPP or WAMP and go to: http://localhost/AtlasCinema/index.php
 	
-# Troubleshooting:
-If a OCISTMTGETNEXTRESULT is popping up, do this
+# Troubleshooting if you tried to use Oracle Database 11g:
+* If a OCISTMTGETNEXTRESULT is popping up, do this
 1. Add oci.dll, oraociei12.dll, and oraons.dll to apache/bin folder from instantclient_12_1.
 2. Restart the Apache.
-
+* https://docs.oracle.com/cd/E11882_01/appdev.112/e10811.pdf
 # External References
-1. https://docs.oracle.com/cd/E11882_01/appdev.112/e10811.pdf
-2. https://github.com/diazmaria/RaleighTheatre
+Credits to https://github.com/diazmaria/RaleighTheatre
